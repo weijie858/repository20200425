@@ -1,1 +1,2 @@
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\cloud\GitHub\cloud\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
