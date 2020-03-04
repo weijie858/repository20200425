@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj", "{E13F22EF-6344-47D4-AFFF-3770E53A2928}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{93E28E26-53D6-4F3F-BA95-71F7A0D9E43C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{73BD5DB3-1D7A-4E65-97D8-484897FBDAE2}"
+	ProjectSection(SolutionItems) = preProject
+		..\memorandum\everyday.txt = ..\memorandum\everyday.txt
+		..\memorandum\git.txt = ..\memorandum\git.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
