@@ -1,1 +1,5 @@
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\cloud\GitHub\cloud\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\cloud\cloud\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\cloud\cloud\Repository_2015\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\cloud\cloud\Repository_2015\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

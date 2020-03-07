@@ -69,7 +69,6 @@ git config --global user.email "xxxx@xxx.com" 修改邮箱
   会把当前分支的内容上传到远程的master分支  
 --------------------------------------------------
 git pull  [https://github.com/weijie858/text.git] master
-
 会把远程分支的数据得到（注意本地需要初始化一个仓库）
 
 git clone  [https://github.com/weijie858/text.git] master
