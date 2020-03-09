@@ -19,3 +19,18 @@ https://blog.csdn.net/qq_36330228/article/details/85222891
 
 -------------------------/20200307/-------------------------------
 数据库-本杰
+
+
+
+
+
+
+
+
+-------------------------/20200309/-------------------------------
+停止服务: net stop mssqlserver
+启动服务: net start mssqlserver
+
+
+oracle数据库安装 https://jingyan.baidu.com/article/f79b7cb32095f79144023eae.html
+plgin插件 http://www.121down.com/soft/softview-91191.html
