@@ -28,9 +28,11 @@ https://blog.csdn.net/qq_36330228/article/details/85222891
 
 
 -------------------------/20200309/-------------------------------
+链接：https://pan.baidu.com/s/1DmNz_lf1tf4DH3HLjGkJ0w 
+提取码：mhf7 
 停止服务: net stop mssqlserver
 启动服务: net start mssqlserver
 
-
+oracle 文档 https://www.w3cschool.cn/oraclejc/
 oracle数据库安装 https://jingyan.baidu.com/article/f79b7cb32095f79144023eae.html
 plgin插件 http://www.121down.com/soft/softview-91191.html

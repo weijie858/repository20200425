@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{ABF1FDD1-5ED2-4EB6-B75A-7EB8902719E7}"
 EndProject
@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{
 	ProjectSection(SolutionItems) = preProject
 		..\memorandum\everyday.txt = ..\memorandum\everyday.txt
 		..\memorandum\git.txt = ..\memorandum\git.txt
+		oracle.md = oracle.md
 		SqlServer.md = SqlServer.md
 		SqlServer.sql = SqlServer.sql
 	EndProjectSection
