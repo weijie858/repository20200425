@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <!--Staticfile CDN:
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>-->
+    <!--百度 CDN:
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+        -->
+    <!--新浪 CDN:
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js">
+    </script>-->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <iframe src="jquerypage.html" id="frame1"></iframe>
+    <ul></ul>
+</body>
+
+</html>
+<script>
+    //http://jquery.cuishifeng.cn/  api 文档
+    var obj = {};
+    var obj2 = null;
+    //jQuery 选择器
+    $( '#frame1',document).ready(function () {
+        var content = '<div><p>Hello</p></div>'
+        $(content).appendTo("body");
+        console.log($.fn.jquery);
+        console.log($.isEmptyObject(obj));
+        console.log($.isEmptyObject(obj2));
+        obj.name = "j";
+        console.log($.isEmptyObject(obj));
+      
+    })
+
+
+
+    //文档就绪事件
+    //$(document).ready(function () {
+
+    //    // 开始写 jQuery 代码...
+
+    //});
+    //$(function () {
+
+    //    // 开始写 jQuery 代码...
+
+    //});
+</script>
