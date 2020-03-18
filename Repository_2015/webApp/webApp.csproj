@@ -133,6 +133,8 @@
     <Content Include="Global.asax" />
     <Content Include="html\index.html" />
     <Content Include="html\jquerypage.html" />
+    <Content Include="html\珠峰VIP前端\目录.txt" />
+    <Content Include="html\珠峰VIP前端\课时106-107：什么是事件.html" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <None Include="scripts\jquery-3.4.1.intellisense.js" />

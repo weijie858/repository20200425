@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        #div1 { width:300px ;height:600px;background-color:red;}
+    </style>
+</head>
+<body>
+    <h1>http://www.w3school.com.cn/jsref/jsref_events.asp</h1>
+    <div  id="div1">
+        <input id="inpu" />
+    </div>
+<script>
+    //什么是事件
+    //事件分为两部分
+    //行为本身：浏览器天生就赋予其的行为 onclick onmouseover onmouseenter onmouseout onmouseleave
+    var oDiv = document.getElementById('div1');
+    var inpu = document.getElementById('inpu');
+    inpu.onkeyup = function (e) {
+        console.log(e.keyCode);//空格 32   
+    }
+    //onclick 这个行为定义在当前元素的私有属性上
+    oDiv.onclick = function (e) {
+        e = e || window.event;//
+        e.target = e.target || e.srcElement;
+        //e.clientX;//当前鼠标触发点距离屏幕左侧距离
+       // e.clientY;
+        e.pageX=e.pageX||(e.clientX+(document.documentElement.scrollLeft||document.body.scrollLeft));//当前鼠标触发点距离页面第一屏的距离
+        e.pageY=e.pageY||(e.clientY+(document.documentElement.scrollTop||document.body.scrollTop));
+        e.preventDefault ?e.preventDefault() : e.returnValue=false;
+        e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+        console.log(arguments);
+        console.log(1);
+    };
+    //addEventListener 这个属性定义在当前元素所属eventtarget 这个类的原型上
+    //DOM2级事件绑定
+    oDiv.addEventListener("click", function () {
+        console.log(arguments);
+        console.log(22);
+    }, false);
+
+    document.body.onclick = function (e) {
+        console.dir(e);
+        console.dir(3);
+    };
+
+
+</script>
+</body>
+</html>
