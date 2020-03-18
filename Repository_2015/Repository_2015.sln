@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{
 		oracle.md = oracle.md
 		SqlServer.md = SqlServer.md
 		SqlServer.sql = SqlServer.sql
+		technologyStack.md = technologyStack.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApp", "webApp\webApp.csproj", "{A3D89CDE-4187-480E-A844-091FCF348375}"

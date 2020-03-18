@@ -112,3 +112,33 @@ http://www.downza.cn/soft/13541.html
 
 
 --------------------------20200312--------------------------------
+https://www.cnblogs.com/shenwuyu/p/5741113.html  --重要
+https://www.cnblogs.com/xiangzhong/p/4988915.html  --配置session
+
+报表
+https://blog.csdn.net/happy_meng/article/details/78996951
+
+$.fn.method()=function(){}和$.fn.extend({})的比较
+///https://www.cnblogs.com/qicao/p/8568158.html
+
+
+
+
+
+
+
+
+--------------------------20200316--------------------------------
+
+
+
+
+
+
+
+
+
+
+--------------------------20200317--------------------------------
+https://www.cnblogs.com/OleRookie/p/10675331.html
+https://www.linuxidc.com/Linux/2016-09/135239.htm

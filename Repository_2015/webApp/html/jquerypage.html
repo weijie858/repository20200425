@@ -19,11 +19,30 @@
 
 <body>
     <!--<iframe src="jquerypage.html" id="frame1"></iframe>-->
-    <ul></ul>
+ 
+    <form>
+        <ul></ul>
+
+        <p id="results"><b>Results:</b> </p>
+        <select name="single1">
+            <option>Single</option>
+            <option>Single2</option>
+        </select>
+        <select name="multiple2" multiple="multiple">
+            <option selected="selected">Multiple</option>
+            <option>Multiple2</option>
+            <option selected="selected">Multiple3</option>
+        </select><br />
+        <input type="checkbox" name="check" value="check1" /> check1
+        <input type="checkbox" name="check" value="check2" checked="checked" /> check2
+        <input type="radio" name="radio" value="radio1" checked="checked" /> radio1
+        <input type="radio" name="radio" value="radio2" /> radio2
+    </form>
 </body>
 
 </html>
 <script>
+    //https://www.cnblogs.com/qicao/p/8568158.html
     //http://jquery.cuishifeng.cn/  api 文档
     var obj = {};
     var obj2 = null;
@@ -37,6 +56,14 @@
         console.log($.isEmptyObject(obj2));
         obj.name = "j";
         console.log($.isEmptyObject(obj));
+
+        //
+        debugger;
+        var fields = $("select, :radio").serializeArray();
+        jQuery.each(fields, function (i, field) {
+            debugger;
+            $("#results").append(field.value + " ");
+        });
       
     })
 /*===========分割线begin================================================================================
