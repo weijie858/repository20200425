@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApp", "webApp\webApp.csproj", "{A3D89CDE-4187-480E-A844-091FCF348375}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleOracleEFTest", "ConsoleOracleEFTest\ConsoleOracleEFTest.csproj", "{0E28B112-E036-4082-8940-FC943EFB6567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oracleConsol", "oracleConsol\oracleConsol.csproj", "{6424C288-BB17-4E15-BA15-4CA71B5785A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{A3D89CDE-4187-480E-A844-091FCF348375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D89CDE-4187-480E-A844-091FCF348375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3D89CDE-4187-480E-A844-091FCF348375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E28B112-E036-4082-8940-FC943EFB6567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E28B112-E036-4082-8940-FC943EFB6567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E28B112-E036-4082-8940-FC943EFB6567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E28B112-E036-4082-8940-FC943EFB6567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6424C288-BB17-4E15-BA15-4CA71B5785A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6424C288-BB17-4E15-BA15-4CA71B5785A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6424C288-BB17-4E15-BA15-4CA71B5785A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6424C288-BB17-4E15-BA15-4CA71B5785A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
