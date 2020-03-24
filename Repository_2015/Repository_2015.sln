@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{
 	ProjectSection(SolutionItems) = preProject
 		..\memorandum\everyday.txt = ..\memorandum\everyday.txt
 		..\memorandum\git.txt = ..\memorandum\git.txt
+		loan.md = loan.md
 		oracle.md = oracle.md
 		SqlServer.md = SqlServer.md
 		SqlServer.sql = SqlServer.sql
