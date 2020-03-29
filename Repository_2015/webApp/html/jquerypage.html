@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <!--Staticfile CDN:
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>-->
+    <!--百度 CDN:
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+        -->
+    <!--新浪 CDN:
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js">
+    </script>-->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <!--<iframe src="jquerypage.html" id="frame1"></iframe>-->
+ 
+    <form>
+        <ul></ul>
+
+        <p id="results"><b>Results:</b> </p>
+        <select name="single1">
+            <option>Single</option>
+            <option>Single2</option>
+        </select>
+        <select name="multiple2" multiple="multiple">
+            <option selected="selected">Multiple</option>
+            <option>Multiple2</option>
+            <option selected="selected">Multiple3</option>
+        </select><br />
+        <input type="checkbox" name="check" value="check1" /> check1
+        <input type="checkbox" name="check" value="check2" checked="checked" /> check2
+        <input type="radio" name="radio" value="radio1" checked="checked" /> radio1
+        <input type="radio" name="radio" value="radio2" /> radio2
+    </form>
+</body>
+
+</html>
+<script>
+    //https://www.cnblogs.com/qicao/p/8568158.html
+    //http://jquery.cuishifeng.cn/  api 文档
+    var obj = {};
+    var obj2 = null;
+    //jQuery 选择器
+    $(document).ready(function () {
+        $("#frame1" ,parent.document).html("你好")
+        var content = '<div><p>Hello</p></div>'
+        $(content).appendTo("body");
+        console.log($.fn.jquery);
+        console.log($.isEmptyObject(obj));
+        console.log($.isEmptyObject(obj2));
+        obj.name = "j";
+        console.log($.isEmptyObject(obj));
+
+        //
+        debugger;
+        var fields = $("select, :radio").serializeArray();
+        jQuery.each(fields, function (i, field) {
+            debugger;
+            $("#results").append(field.value + " ");
+        });
+      
+    })
+/*===========分割线begin================================================================================
+jquery iframe父子框架中的元素访问方法
+在web开发中，经常会用到iframe，难免会碰到需要在父窗口中使用iframe中的元素、或者在iframe框架中使用父窗口的元素
+js
+在父窗口中获取iframe中的元素
+1、
+格式：window.frames["iframe的name值"].document.getElementById("iframe中控件的ID").click();
+实例：window.frames["ifm"].document.getElementById("btnOk").click();
+2、
+格式：
+var obj=document.getElementById("iframe的name").contentWindow;
+var ifmObj=obj.document.getElementById("iframe中控件的ID");
+ifmObj.click();
+实例：
+var obj=document.getElementById("ifm").contentWindow;
+var ifmObj=obj.document.getElementById("btnOk");
+ifmObj.click();
+在iframe中获取父窗口的元素
+格式：window.parent.document.getElementById("父窗口的元素ID").click();
+实例：window.parent.document.getElementById("btnOk").click();
+jquery
+在父窗口中获取iframe中的元素
+1、
+格式：$("#iframe的ID").contents().find("#iframe中的控件ID").click();//jquery 方法1 
+实例：$("#ifm").contents().find("#btnOk").click();//jquery 方法1
+2、
+格式：$("#iframe中的控件ID",document.frames("frame的name").document).click();//jquery 方法2
+实例：$("#btnOk",document.frames("ifm").document).click();//jquery 方法2
+在iframe中获取父窗口的元素
+格式：$('#父窗口中的元素ID', parent.document).click();
+实例：$('#btnOk', parent.document).click();
+https://www.cnblogs.com/zhaoxiansheng/p/11107149.html
+//    $('div','li') 和 $('div , li') 和 $('div li') 区别
+
+//    1、$('div','li')是$(子，父)，是从父节点里找子，而不是找li外面的div。
+
+//2、$('div , li')才是找所有的div和li，之间不存在父子关系。
+
+//3、$('div li') 是找div里面所有li，包括子级，孙子级，总之就是div里面所有li，不管有几层关系。
+===========分割线end====================================================================================*/
+/*===========分割线begin================================================================================
+    //文档就绪事件
+    //$(document).ready(function () {
+
+    //    // 开始写 jQuery 代码...
+
+    //});
+    //$(function () {
+
+    //    // 开始写 jQuery 代码...
+
+    //});
+===========分割线end====================================================================================*/
+</script>

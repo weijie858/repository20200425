@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script>
+        var reg = /\d/;
+        console.log(reg.test("ddjd"));
+        console.log(reg.test("dsfs2j"));
+        console.log(reg.test('2'));
+
+        var reg2 = /\d/ig;
+        console.dir(RegExp.prototype);
+        console.log(reg2.exec("课时(37) 正则的作用"));
+    </script>
+</body>
+</html>

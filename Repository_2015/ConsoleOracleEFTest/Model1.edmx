@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="oracleModel.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--生成过程中发现错误:
+警告 6013: 表/视图“SCOTT.BONUS”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="BONUS">
+          <Property Name="ENAME" Type="varchar2" MaxLength="10" />
+          <Property Name="JOB" Type="varchar2" MaxLength="9" />
+          <Property Name="SAL" Type="number" Precision="38" Scale="0" />
+          <Property Name="COMM" Type="number" Precision="38" Scale="0" />
+        </EntityType>-->
+        <EntityType Name="DEPT">
+          <Key>
+            <PropertyRef Name="DEPTNO" />
+          </Key>
+          <Property Name="DEPTNO" Type="number" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="DNAME" Type="varchar2" MaxLength="14" />
+          <Property Name="LOC" Type="varchar2" MaxLength="13" />
+        </EntityType>
+        <EntityType Name="EMP">
+          <Key>
+            <PropertyRef Name="EMPNO" />
+          </Key>
+          <Property Name="EMPNO" Type="number" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="ENAME" Type="varchar2" MaxLength="10" />
+          <Property Name="JOB" Type="varchar2" MaxLength="9" />
+          <Property Name="MGR" Type="number" Precision="4" Scale="0" />
+          <Property Name="HIREDATE" Type="date" />
+          <Property Name="SAL" Type="number" Precision="7" Scale="2" />
+          <Property Name="COMM" Type="number" Precision="7" Scale="2" />
+          <Property Name="DEPTNO" Type="number" Precision="2" Scale="0" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6013: 表/视图“SCOTT.SALGRADE”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="SALGRADE">
+          <Property Name="GRADE" Type="number" Precision="38" Scale="0" />
+          <Property Name="LOSAL" Type="number" Precision="38" Scale="0" />
+          <Property Name="HISAL" Type="number" Precision="38" Scale="0" />
+        </EntityType>-->
+        <Association Name="FK_DEPTNO">
+          <End Role="DEPT" Type="Self.DEPT" Multiplicity="0..1" />
+          <End Role="EMP" Type="Self.EMP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPT">
+              <PropertyRef Name="DEPTNO" />
+            </Principal>
+            <Dependent Role="EMP">
+              <PropertyRef Name="DEPTNO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="P_YEARSAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="SCOTT">
+          <Parameter Name="ENO" Type="number" Mode="In" />
+          <Parameter Name="YEARSAL" Type="number" Mode="Out" />
+        </Function>
+        <EntityContainer Name="oracleModelStoreContainer">
+          <EntitySet Name="DEPT" EntityType="Self.DEPT" Schema="SCOTT" store:Type="Tables" />
+          <EntitySet Name="EMP" EntityType="Self.EMP" Schema="SCOTT" store:Type="Tables" />
+          <AssociationSet Name="FK_DEPTNO" Association="Self.FK_DEPTNO">
+            <End Role="DEPT" EntitySet="DEPT" />
+            <End Role="EMP" EntitySet="EMP" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="oracleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DEPT">
+          <Key>
+            <PropertyRef Name="DEPTNO" />
+          </Key>
+          <Property Name="DEPTNO" Type="Byte" Nullable="false" />
+          <Property Name="DNAME" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="LOC" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="EMPs" Relationship="Self.FK_DEPTNO" FromRole="DEPT" ToRole="EMP" />
+        </EntityType>
+        <EntityType Name="EMP">
+          <Key>
+            <PropertyRef Name="EMPNO" />
+          </Key>
+          <Property Name="EMPNO" Type="Int16" Nullable="false" />
+          <Property Name="ENAME" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="JOB" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="MGR" Type="Int16" />
+          <Property Name="HIREDATE" Type="DateTime" />
+          <Property Name="SAL" Type="Decimal" Precision="7" Scale="2" />
+          <Property Name="COMM" Type="Decimal" Precision="7" Scale="2" />
+          <Property Name="DEPTNO" Type="Byte" />
+          <NavigationProperty Name="DEPT" Relationship="Self.FK_DEPTNO" FromRole="EMP" ToRole="DEPT" />
+        </EntityType>
+        <Association Name="FK_DEPTNO">
+          <End Role="DEPT" Type="Self.DEPT" Multiplicity="0..1" />
+          <End Role="EMP" Type="Self.EMP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPT">
+              <PropertyRef Name="DEPTNO" />
+            </Principal>
+            <Dependent Role="EMP">
+              <PropertyRef Name="DEPTNO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DEPTs" EntityType="Self.DEPT" />
+          <EntitySet Name="EMPs" EntityType="Self.EMP" />
+          <AssociationSet Name="FK_DEPTNO" Association="Self.FK_DEPTNO">
+            <End Role="DEPT" EntitySet="DEPTs" />
+            <End Role="EMP" EntitySet="EMPs" />
+          </AssociationSet>
+          <FunctionImport Name="P_YEARSAL">
+            <Parameter Name="ENO" Mode="In" Type="Decimal" />
+            <Parameter Name="YEARSAL" Mode="Out" Type="Decimal" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="oracleModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="DEPTs">
+            <EntityTypeMapping TypeName="oracleModel.DEPT">
+              <MappingFragment StoreEntitySet="DEPT">
+                <ScalarProperty Name="DEPTNO" ColumnName="DEPTNO" />
+                <ScalarProperty Name="DNAME" ColumnName="DNAME" />
+                <ScalarProperty Name="LOC" ColumnName="LOC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPs">
+            <EntityTypeMapping TypeName="oracleModel.EMP">
+              <MappingFragment StoreEntitySet="EMP">
+                <ScalarProperty Name="EMPNO" ColumnName="EMPNO" />
+                <ScalarProperty Name="ENAME" ColumnName="ENAME" />
+                <ScalarProperty Name="JOB" ColumnName="JOB" />
+                <ScalarProperty Name="MGR" ColumnName="MGR" />
+                <ScalarProperty Name="HIREDATE" ColumnName="HIREDATE" />
+                <ScalarProperty Name="SAL" ColumnName="SAL" />
+                <ScalarProperty Name="COMM" ColumnName="COMM" />
+                <ScalarProperty Name="DEPTNO" ColumnName="DEPTNO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="P_YEARSAL" FunctionName="oracleModel.Store.P_YEARSAL" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
