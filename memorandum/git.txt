@@ -173,7 +173,7 @@ git push  origin[变量名替换远程地址] -u master
      --------------------------------------------------
 19 push和pull时的简写方式
      命令 git remote add  origin[变量名替换远程地址] 远程地址
-     git push  origin[变量名替换远程地址] -u master
+     git push  origin[变量名替换远程地址] -u master  //加上-u之后，git会把当前分支和远程的指定分支进行关联
 
 
 
