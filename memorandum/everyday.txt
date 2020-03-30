@@ -141,7 +141,7 @@ $.fn.method()=function(){}和$.fn.extend({})的比较
 
 --------------------------20200317--------------------------------
 https://www.cnblogs.com/OleRookie/p/10675331.html
-https://www.linuxidc.com/Linux/2016-09/135239.htm
+https://www.linuxidc.com/Linux/2016-09/135239.htm																																						
 
 
 --------------------------20200318--------------------------------
@@ -166,9 +166,4 @@ https://www.cnblogs.com/wang_xy/p/10795117.html
 https://www.cnblogs.com/ZaraNet/p/10000311.html
 
 
-
-
-
-
-
-
+--------------------------20200329--------------------------------
