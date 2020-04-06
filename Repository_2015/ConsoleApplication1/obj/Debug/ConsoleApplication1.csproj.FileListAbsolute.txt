@@ -1,8 +1,5 @@
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
 F:\cloud\GitHub\cloud\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-F:\cloud\cloud\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-F:\cloud\cloud\Repository_2015\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-F:\cloud\cloud\Repository_2015\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
@@ -14,3 +11,4 @@ D:\GitHubRepository\Repository_2015\ConsoleApplication1\bin\Debug\NPOI.OOXML.dll
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\bin\Debug\NPOI.OpenXml4Net.dll
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\bin\Debug\NPOI.OpenXmlFormats.dll
 D:\GitHubRepository\Repository_2015\ConsoleApplication1\bin\Debug\ICSharpCode.SharpZipLib.xml
+F:\cloud\cloud\Repository_2015\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config

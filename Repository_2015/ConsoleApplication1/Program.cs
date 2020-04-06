@@ -140,7 +140,7 @@ namespace ConsoleApplication1
     //        Console.ReadKey();
     //    }
     //}
-    #endregion 
+    #endregion
     #endregion
 
 
@@ -164,7 +164,26 @@ namespace ConsoleApplication1
 
 
 
-
+    #region 反射
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //动态加载一个程序集（exe,dll)
+            // System.Reflection.Assembly.LoadFile("filepath");
+            //获得一个程序集里的所以类型
+            // Assembly的实力.GetTypes()
+            //判断一个Type是否继承自制定的类
+            // Type的实例.isSubclassOf(Type);
+            //获得一个Type的全名包括所在命名空间
+            //type的实例。fullName
+            //根据一个Type的全名，创建他的实例
+            //    Assembly的实例。createInstance(type的全名)
+            Console.WriteLine("台式测试");
+            Console.ReadKey();
+        }
+    }
+    #endregion
 
 
 }
