@@ -37,7 +37,7 @@ namespace OA.DALFactory
         }
         public abstract IDAL.I部门DAL Dal部门Provider
         {
-            get; 
+            get;  
             //set;
         }
     } 
