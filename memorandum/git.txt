@@ -154,7 +154,7 @@ git push  origin[变量名替换远程地址] -u master
      git pull  [https://github.com/weijie858/text.git] master
      会把远程分支的数据得到（注意本地需要初始化一个仓库）
  
-     git clone  [https://github.com/weijie858/text.git] master
+     git clone  https://github.com/aspnetboilerplate/aspnetboilerplate.git  master
  
 
 

@@ -99,7 +99,7 @@ BPM地址：http://192.168.46.11/BPMClient/index.html
 --------------------------------------------
 
 ----20200311--------------
-ERp系统流程熟悉
+ERp系统流程熟悉 
 测试地址 http://yrp.thinkq.cn/Account/Login?ReturnUrl=%2f
 账号 admin
 密码 yrp2020
@@ -170,3 +170,7 @@ https://www.cnblogs.com/ZaraNet/p/10000311.html
 
 --------------------------20200404--------------------------------
 aspnet_regsql
+
+
+--------------------------20200425--------------------------------
+EntityFramework之领域驱动设计实践（十） https://www.cnblogs.com/daxnet/archive/2010/07/19/1780764.html
