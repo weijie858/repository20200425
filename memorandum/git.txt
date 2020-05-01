@@ -197,3 +197,6 @@ git push origin master --force  强制提交
 
 
    https://wangchujiang.com/idoc/html/%E4%B8%BB%E9%A2%98.html#t6%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9
+
+
+   直击痛点：一招搞定GitHub开源项目下载加速！
