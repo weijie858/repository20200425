@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{73BD5DB3-1D7A-4E65-97D8-484897FBDAE2}"
 	ProjectSection(SolutionItems) = preProject
+		core.html = core.html
+		core.md = core.md
 		..\memorandum\everyday.txt = ..\memorandum\everyday.txt
 		..\memorandum\git.txt = ..\memorandum\git.txt
 		loan.md = loan.md
