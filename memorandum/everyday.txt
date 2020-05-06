@@ -173,4 +173,21 @@ aspnet_regsql
 
 
 --------------------------20200425--------------------------------
-EntityFramework之领域驱动设计实践（十） https://www.cnblogs.com/daxnet/archive/2010/07/19/1780764.html
+EntityFramework之领域驱动设计实践（十） 
+https://www.cnblogs.com/daxnet/archive/2010/07/19/1780764.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------20200426--------------------------------
+ABP适配Oracle全过程
+https://www.cnblogs.com/yuluowuhun/archive/2018/12/05/10063084.html
