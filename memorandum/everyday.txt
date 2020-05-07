@@ -221,6 +221,10 @@ http://www.identityserver.com.cn/
 11.ClientCredential模式总结  模式调用 ----------R
 -------------------------------------------------------------
 12.oauth密码模式identity server4实现
+13.详解oauth2授权码流程
+14.oauth2与open id connect 对比
+15.oauth2 + oidc 实现 server部分
+16.oauth2 + oidc 实现 client部分
 
 
 
