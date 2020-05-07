@@ -215,7 +215,9 @@ http://www.identityserver.com.cn/
 
 
 07.oAuth2介绍----------R
-08.IdentityServer4登录中心
+08.IdentityServer4登录中心 ----------R
+09.客户端集成IdentityServer ----------R
+10.第三方ClientCredential模式调用 ----------R
 
 
 
