@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs2019APP", "vs2019APP\vs2019APP.csproj", "{EA580999-BC06-4E07-BF99-2B0719F60456}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityserverSample", "IdentityserverSample\IdentityserverSample.csproj", "{B0B281CD-4717-4062-BBF1-E13E31E303C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCredentialApi", "ClientCredentialApi\ClientCredentialApi.csproj", "{5406675F-5B0F-4B35-82E9-04F822CD4D8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA580999-BC06-4E07-BF99-2B0719F60456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA580999-BC06-4E07-BF99-2B0719F60456}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA580999-BC06-4E07-BF99-2B0719F60456}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA580999-BC06-4E07-BF99-2B0719F60456}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0B281CD-4717-4062-BBF1-E13E31E303C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0B281CD-4717-4062-BBF1-E13E31E303C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0B281CD-4717-4062-BBF1-E13E31E303C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0B281CD-4717-4062-BBF1-E13E31E303C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5406675F-5B0F-4B35-82E9-04F822CD4D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5406675F-5B0F-4B35-82E9-04F822CD4D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5406675F-5B0F-4B35-82E9-04F822CD4D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5406675F-5B0F-4B35-82E9-04F822CD4D8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
