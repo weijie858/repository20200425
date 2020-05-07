@@ -218,7 +218,9 @@ http://www.identityserver.com.cn/
 08.IdentityServer4登录中心 ----------R
 09.客户端集成IdentityServer ----------R
 10.第三方ClientCredential模式调用 ----------R
-
+11.ClientCredential模式总结  模式调用 ----------R
+-------------------------------------------------------------
+12.oauth密码模式identity server4实现
 
 
 
