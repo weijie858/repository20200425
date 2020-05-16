@@ -152,6 +152,10 @@
     <Content Include="html\珠峰VIP前端\课时38 正则的元字符和一些简单的应用.html" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="备忘录\core.html" />
+    <Content Include="备忘录\Repository_2015.sln" />
+    <Content Include="备忘录\SqlServer.sql" />
+    <Content Include="备忘录\新建文本文档.txt" />
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -161,6 +165,14 @@
     <Content Include="scripts\jquery-3.4.1.slim.js" />
     <Content Include="scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Web.config" />
+    <Content Include="备忘录\core.md" />
+    <Content Include="备忘录\everyday.txt.lnk" />
+    <Content Include="备忘录\git.txt.lnk" />
+    <Content Include="备忘录\loan.md" />
+    <Content Include="备忘录\oracle.md" />
+    <Content Include="备忘录\SqlServer.md" />
+    <Content Include="备忘录\technologyStack.md" />
+    <Content Include="备忘录\webapi.md" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
