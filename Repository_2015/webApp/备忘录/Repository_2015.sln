@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{ABF1FDD1-5ED2-4EB6-B75A-7EB8902719E7}"
 EndProject
@@ -11,16 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘录", "备忘录", "{
 	ProjectSection(SolutionItems) = preProject
 		core.html = core.html
 		core.md = core.md
-		docker.md = docker.md
 		..\memorandum\everyday.txt = ..\memorandum\everyday.txt
 		..\memorandum\git.txt = ..\memorandum\git.txt
 		loan.md = loan.md
-		mvc.txt = mvc.txt
 		oracle.md = oracle.md
 		SqlServer.md = SqlServer.md
 		SqlServer.sql = SqlServer.sql
 		technologyStack.md = technologyStack.md
-		webapi.md = webapi.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApp", "webApp\webApp.csproj", "{A3D89CDE-4187-480E-A844-091FCF348375}"
@@ -62,14 +59,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD", "DDD\DDD.csproj", "{9D1D7513-B7BC-4E1C-A76E-B6C46B446C87}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testDDD", "testDDD\testDDD.csproj", "{2024F29E-2642-41AF-80A4-5B8EA7BC02A9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "identityserverApp", "identityserverApp\identityserverApp.csproj", "{C4C539F1-4726-48EA-A614-CEA2E40985D9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSO", "SSO", "{1F604271-D625-41EE-8F52-6D950919B22C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebapiService", "WebapiService\WebapiService.csproj", "{25B8FE54-B9C8-47C0-A14A-866FAE5141D7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVC1", "WebMVC1\WebMVC1.csproj", "{7C1CC3DE-DE0E-4B7D-AE19-63B09AB6B616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,18 +134,6 @@ Global
 		{2024F29E-2642-41AF-80A4-5B8EA7BC02A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2024F29E-2642-41AF-80A4-5B8EA7BC02A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2024F29E-2642-41AF-80A4-5B8EA7BC02A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4C539F1-4726-48EA-A614-CEA2E40985D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4C539F1-4726-48EA-A614-CEA2E40985D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4C539F1-4726-48EA-A614-CEA2E40985D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4C539F1-4726-48EA-A614-CEA2E40985D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25B8FE54-B9C8-47C0-A14A-866FAE5141D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25B8FE54-B9C8-47C0-A14A-866FAE5141D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25B8FE54-B9C8-47C0-A14A-866FAE5141D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25B8FE54-B9C8-47C0-A14A-866FAE5141D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C1CC3DE-DE0E-4B7D-AE19-63B09AB6B616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C1CC3DE-DE0E-4B7D-AE19-63B09AB6B616}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C1CC3DE-DE0E-4B7D-AE19-63B09AB6B616}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C1CC3DE-DE0E-4B7D-AE19-63B09AB6B616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -177,7 +154,5 @@ Global
 		{5303952B-9785-49BC-9937-94AE3E64005C} = {470EB556-5369-48ED-AC7B-BFF4DF1AF5DF}
 		{9D1D7513-B7BC-4E1C-A76E-B6C46B446C87} = {C4AB3CCA-1517-41A9-85E1-3DC1F466E040}
 		{2024F29E-2642-41AF-80A4-5B8EA7BC02A9} = {C4AB3CCA-1517-41A9-85E1-3DC1F466E040}
-		{25B8FE54-B9C8-47C0-A14A-866FAE5141D7} = {1F604271-D625-41EE-8F52-6D950919B22C}
-		{7C1CC3DE-DE0E-4B7D-AE19-63B09AB6B616} = {1F604271-D625-41EE-8F52-6D950919B22C}
 	EndGlobalSection
 EndGlobal
