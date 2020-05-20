@@ -7,7 +7,7 @@ P5建立列表和表单View
 P6配置信息
 P7View Component
 P8Razor Page（上）
-P9Razor Page（下）
+P9Razor Page（下） 
 P10SignalR 原理
 P11SignalR 小例子
 P12Blazor 简介

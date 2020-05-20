@@ -364,12 +364,12 @@ https://www.bilibili.com/video/BV1c441167KQ?p=3
 P1创建项目（上）  --------R
 P2创建项目（中）  --------R
 P3创建项目（下）  --------R
-P4建立Controller，使用Tag Helper
-P5建立列表和表单View
-P6配置信息
-P7View Component
-P8Razor Page（上）
-P9Razor Page（下）
+P4建立Controller，使用Tag Helper --------R
+P5建立列表和表单View --------R
+P6配置信息 --------R
+P7View Component --------R
+P8Razor Page（上） --------R
+P9Razor Page（下） --------R
 P10SignalR 原理
 P11SignalR 小例子
 P12Blazor 简介
@@ -380,6 +380,25 @@ P16gRPC - Protocol Buffer
 P17gRPC in ASP.NET Core 3.x
 P18部署
 
+
+
+---------------
+https://www.bilibili.com/video/BV1dK4y1C7rf/?spm_id_from=333.788.videocard.19
+
+P1招聘网站开发—1.项目简介及ORM框架搭建   --------R
+P2招聘网站开发—2.构造函数注入及EF Core的单例使用
+P3招聘网站开发—3.EF Core延迟加载机制
+P4招聘网站开发—4.Swagger的安装与使用
+P5招聘网站开发—5.Swagger首页展示与接口说明_转
+P6招聘网站开发—6.Restful风格说明与接口创建
+P7招聘网站开发—7. Vue搭建及插值表达式的使用
+P8招聘网站开发—8.Vue指令概览与使用
+P9招聘网站开发—9.界面搭建及视图模型和导航属性的配置
+P10招聘网站开发—10.前端拿不到数据？看看导航属性中易被踩中的大坑
+P11招聘网站开发—11.数据无限迭代？先来两个方法解决导航属性的大坑！
+P12招聘网站开发—12.Linq手动关联表数据，彻底解决数据的无限迭代！
+P13招聘网站开发—13.跨域问题解决与数据请求方法
+P14招聘网站开发—14.Vue后端获取数据及前端数据渲染
 
 
 
